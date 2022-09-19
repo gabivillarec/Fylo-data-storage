@@ -1,0 +1,282 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+ } 
+
+ :root{
+
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+ }
+  
+body{
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 15.5px;   /* weight 400 y 700*/
+    width: 100%;
+    height: 100vh;
+    
+
+} 
+
+
+.background_mob{
+
+    position:absolute;
+    z-index:-1;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.caja1, .caja2{
+
+    background-color: var(--Dark-Blue);
+    border: 0;
+    width: 360px;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/*/////////////////////////caja1////////////////////*/
+.caja1{
+
+    border-radius: 10px 120px 10px 10px;
+    margin-bottom: 20px;
+    padding: 45px 45px 45px 45px ;
+}
+
+.logo{
+
+    margin-bottom: 25px;
+    
+}
+
+.logo img{
+
+    width: 155px;
+    margin-bottom: 8px;
+    
+}
+
+.enlaces{
+
+    display: flex;
+    margin-left: -9px;
+
+}
+
+.enlaces a{
+
+    background-color: var(--Very-Dark-Blue);
+    text-decoration: none;
+    margin: 0px 9px 0px 9px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+
+}
+
+.enlaces img{
+
+    width: 28px;
+
+}
+
+#documento{
+
+    width: 22px;
+
+}
+  
+ /*///////////////////////////caja2////////////////////////////////*/
+ 
+ .caja2{
+
+    padding: 32px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+
+ }
+
+ .caja2 p{
+    margin-bottom: 20px;  
+ }
+
+ /*////////////////////////////barra/////////////////////////////////////*/
+
+ .barra {
+
+    background-color: hsla(229, 57%, 11%, 0.50);;
+    width: 100%;
+    height: 22px;
+    border: 0px ;
+    border-radius: 10px;
+    padding: 3px;
+
+ }
+
+ .gradiente{
+
+    border: 0px solid;
+    border-radius: 10px;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(90deg,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    padding: 2px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+
+ }
+
+ .pelotita{
+
+    border: 1px solid;
+    background-color: rgba(255, 255, 255, 0.986);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    
+ }
+
+ /*//////////////////////////////////////*/
+
+ .barra_gb{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-weight: 600;
+
+ }
+
+ .gb_left{ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;  
+    border: 0px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -24%;
+    left: 22%;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+
+ }
+
+ .gb_left h1{ 
+
+    padding: 10px 0px 10px 25px;
+    font-size: 2.8em;
+  
+ }
+
+ .gb_left p{
+
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--Grayish-Blue);
+    padding: 30px 25px 10px 0px;
+
+ }
+
+ /*/////////////////////// Escritorio ///////////////////////////////*/
+
+ @media  (min-width:1440px) {
+
+    body{
+
+        background-image: url(/Challenges/fylo-data-storage-component-master/images/bg-desktop.png);
+        background-size: 100vw 50vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color:var(--Very-Dark-Blue);
+        
+
+    }
+
+    .background_mob{
+        display: none;
+    }
+
+    .container{
+        flex-direction: row;
+    
+    }
+
+    .caja1{
+        margin-bottom: 0;
+    }
+
+    .caja2{
+        
+        margin-top: 51px;
+        margin-left: 25px;
+        width: 600px;
+        align-items: flex-start;
+
+    }
+
+    .gb_left{
+
+        bottom: 155px;
+        left: 380px;
+    
+    }
+
+    .triangulo{
+        position: absolute;
+        left: 523px;
+        bottom: 128px;
+        width: 0;
+        height: 0;
+        border-left: 45px solid transparent;
+        border-top: 45px solid white;
+
+    }
+
+
+
+ }
+
+
+
+
+
+
+
+  
+
+  
+  
