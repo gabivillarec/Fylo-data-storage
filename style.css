@@ -217,7 +217,7 @@ body{
 
     body{
 
-        background-image: url(/Challenges/fylo-data-storage-component-master/images/bg-desktop.png);
+        background-image: url(./images/bg-desktop.png);
         background-size: 100vw 50vh;
         background-repeat: no-repeat;
         background-position: bottom;
